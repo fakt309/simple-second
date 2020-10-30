@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript" src='ss.js'></script>
+
+    <script type="text/javascript">
+
+      var date1 = new Ss();
+      var date2 = new Ss("2019-4-25 99000");
+
+      var subtract = date1.subtract(date2);
+
+      var el = document.createElement("div");
+      el.innerHTML = "date1: "+date1.get();
+      document.body.appendChild(el);
+
+      var el = document.createElement("div");
+      el.innerHTML = "date2: "+date2.get();
+      document.body.appendChild(el);
+
+      var el = document.createElement("div");
+      el.innerHTML = "subtract: "+subtract.get();
+      document.body.appendChild(el);
+
+      var el = document.createElement("div");
+      el.innerHTML = "subtract year: "+subtract.getYear();
+      document.body.appendChild(el);
+
+      var el = document.createElement("div");
+      el.innerHTML = "subtract month: "+subtract.getMonth();
+      document.body.appendChild(el);
+
+      var el = document.createElement("div");
+      el.innerHTML = "subtract day: "+subtract.getDay();
+      document.body.appendChild(el);
+
+      var el = document.createElement("div");
+      el.innerHTML = "subtract time: "+subtract.getTime();
+      document.body.appendChild(el);
+    </script>
+  </body>
+</html>
